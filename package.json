@@ -1,7 +1,14 @@
 {
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.20",
     "sass": "^1.57.0"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
 }
