@@ -7,20 +7,16 @@ const autoprefixer = require('autoprefixer')
 function css(done) {
 
     src('src/scss/app.scss')
-        .pipe( sass({outputStyle: 'compressed'}))
+        .pipe( sass({outputStyle: 'expanded'}))
         .pipe( postcss([autoprefixer()]))
         .pipe( dest('build/css'))
     done()
 }
 
 function dev(){
-    watch( 'src/scss/app.scss', css)
+    watch('src/scss/**/*.scss', css)
 }
 
-function tareaDefault(cb) {
-    console.log('hola');
-    cb()
-}
 
 exports.css = css
 exports.dev = dev
