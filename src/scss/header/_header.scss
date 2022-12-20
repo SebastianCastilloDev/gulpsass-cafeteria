@@ -4,7 +4,17 @@
 .header{
     padding: 5rem 0;
     position: relative;
-    @ m.bgColor(red);
+
+    @include m.telefono{
+        padding: 4rem 0;
+    };
+    @include m.tablet {
+        padding: 3rem;
+    }
+    @include m.desktop{
+        padding: 2rem;
+    }
+
     &::before{
         content: '';
         background-color: v.$negro;
