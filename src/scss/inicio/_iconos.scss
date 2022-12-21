@@ -6,7 +6,7 @@
             @include m.grid(3,5rem);
         }
         @include m.desktop {
-            @include m.grid(5,3rem)
+            @include m.grid(3,3rem)
         }
         margin-top: 5rem;
         li{
